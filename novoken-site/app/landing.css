@@ -64,21 +64,22 @@ a {
   z-index: 10;
   backdrop-filter: blur(18px);
   background: linear-gradient(
-      to bottom,
-      rgba(248, 250, 252, 0.95),
-      rgba(248, 250, 252, 0.82)
-    );
+    to bottom,
+    rgba(248, 250, 252, 0.94),
+    rgba(248, 250, 252, 0.88)
+  );
   border-bottom: 1px solid rgba(226, 232, 240, 0.9);
 }
 
 .nk-header-inner {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 14px 20px;
+  padding: 10px 24px;
   display: flex;
   align-items: center;
   gap: 18px;
 }
+
 
 .nk-brand {
   display: inline-flex;
@@ -170,23 +171,19 @@ a {
   color: #ffffff;
   font-size: 0.95rem;
   font-weight: 500;
-
-  /* create a stacking context */
   isolation: isolate;
-
-  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.35);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.26);
 }
 
-/* gradient layer behind the text */
 .nk-btn-primary::before {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: -1; /* <-- IMPORTANT: behind content */
-
+  z-index: -1;
   background: linear-gradient(90deg, #00c7d9, #2563eb);
   border-radius: inherit;
 }
+
 
 /* text stays on top */
 .nk-btn-primary span {
@@ -220,16 +217,16 @@ a {
 
 .nk-hero {
   max-width: 1120px;
-  margin: 46px auto 32px;
-  padding: 0 20px 10px;
+  margin: 56px auto 32px;
+  padding: 0 24px 10px;
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.1fr);
-  gap: 34px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 48px;
   align-items: center;
 }
 
 .nk-hero-content {
-  max-width: 540px;
+  max-width: 560px;
 }
 
 .nk-kicker {
@@ -242,10 +239,11 @@ a {
 }
 
 .nk-hero-title {
-  font-size: clamp(2.4rem, 3vw + 1rem, 3.2rem);
-  line-height: 1.08;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.6rem, 3.3vw + 1rem, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
   margin: 0 0 18px;
+  font-weight: 700;
 }
 
 .nk-hero-subtitle {
@@ -254,6 +252,7 @@ a {
   color: var(--nk-text-muted);
   margin-bottom: 24px;
 }
+
 
 .nk-hero-actions {
   display: flex;
@@ -331,11 +330,12 @@ a {
   font-size: 0.72rem;
   padding: 4px 10px;
   border-radius: 999px;
-  background: rgba(15, 23, 42, 0.2);
-  border: 1px solid rgba(148, 163, 184, 0.7);
+  background: rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.6);
   color: #e5f2ff;
   backdrop-filter: blur(10px);
 }
+
 
 .nk-hero-grid {
   display: grid;
