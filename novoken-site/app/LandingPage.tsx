@@ -32,7 +32,7 @@ const LandingPage: React.FC = () => {
               Login
             </a>
             <a href="/early-access" className="nk-btn nk-btn-primary">
-              early access btn?
+              Early Access
             </a>
           </div>
         </div>
