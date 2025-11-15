@@ -612,3 +612,59 @@ a {
     padding: 10px 12px 12px;
   }
 }
+
+@media (max-width: 768px) {
+  .nk-header-inner {
+    padding: 10px 14px;
+    gap: 8px;
+  }
+
+  /* hide the middle nav links on mobile for now */
+  .nk-nav {
+    display: none;
+  }
+
+  .nk-header-actions {
+    margin-left: auto;
+    gap: 8px;
+  }
+
+  .nk-link {
+    font-size: 0.9rem;
+    margin-right: 0;
+  }
+
+  .nk-btn-primary,
+  .nk-btn {
+    padding: 0.55rem 1.4rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* narrow phones (what your screenshot looks like) */
+@media (max-width: 480px) {
+  .nk-header-inner {
+    flex-wrap: wrap;
+  }
+
+  .nk-brand {
+    flex: 1;
+  }
+
+  .nk-header-actions {
+    width: 100%;
+    margin-left: 0;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  /* keep Login and button readable */
+  .nk-link {
+    font-size: 0.88rem;
+  }
+
+  .nk-header-actions .nk-btn-primary {
+    padding: 0.5rem 1.2rem;
+  }
+}
