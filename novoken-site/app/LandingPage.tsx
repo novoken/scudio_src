@@ -1,8 +1,14 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./landing.css"; // adjust path to your setup
 
 const LandingPage: React.FC = () => {
   const year = new Date().getFullYear();
+  const [showMobileWarning, setShowMobileWarning] = useState(false);
+
+  useEffect(() => {
+    const t = setTimeout(() => setShowMobileWarning(true), 600); // 0.6s after load
+    return () => clearTimeout(t);
+  }, []);
 
   return (
     
@@ -31,6 +37,13 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </header>
+
+      {showMobileWarning && (
+        <div className="nk-mobile-warning">
+          Hello! You are most likely on a mobile device.<br/> Support for smaller-screened
+          devices is in the works and will be here shortly! <br/>This website is best suited for laptops and desktops.
+        </div>
+      )}
 
       <main className="nk-main">
         <section className="nk-hero">

@@ -668,3 +668,43 @@ a {
     padding: 0.5rem 1.2rem;
   }
 }
+
+/* --- Mobile Warning Banner --- */
+
+.nk-mobile-warning {
+  display: none;
+}
+
+/* show + animate only on small screens */
+@media (max-width: 760px) {
+  .nk-mobile-warning {
+    display: block;
+    position: relative;
+    margin: 0 auto 10px;
+    max-width: 1120px;
+
+    background: linear-gradient(90deg, #2563eb, #00c7d9);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 14px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.25);
+
+    opacity: 0;
+    transform: translateY(-8px);
+    animation: nk-mobile-warning-in 0.4s ease-out forwards;
+  }
+}
+
+@keyframes nk-mobile-warning-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
