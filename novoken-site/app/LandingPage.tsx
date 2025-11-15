@@ -5,6 +5,7 @@ const LandingPage: React.FC = () => {
   const year = new Date().getFullYear();
 
   return (
+    
     <div className="nk-page">
       {/* Header */}
       <header className="nk-header">
