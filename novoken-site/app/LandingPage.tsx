@@ -17,7 +17,7 @@ const LandingPage: React.FC = () => {
       <header className="nk-header">
         <div className="nk-header-inner">
           <a href="/" className="nk-brand">
-            <span className="nk-wordmark">Novoken</span>
+            <span className="nk-wordmark"><strong>Novo</strong>ken</span>
           </a>
 
           <nav className="nk-nav">
