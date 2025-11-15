@@ -137,7 +137,7 @@ a {
 
 .nk-link {
   font-size: 1rem;
-  margin-right: 20;
+  margin-right: 20px;
   color: var(--nk-text-muted);
 }
 
@@ -487,15 +487,24 @@ a {
 @media (max-width: 880px) {
   .nk-header-inner {
     flex-wrap: wrap;
+    padding: 10px 16px;
   }
 
   .nk-nav {
-    display: none; /* keep header clean on mobile for now */
+    display: none; /* hide nav links on mobile for now */
+  }
+
+  .nk-header-actions {
+    margin-left: auto;
+    gap: 8px;
   }
 
   .nk-hero {
+    max-width: 100%;
+    margin: 26px auto 22px;
+    padding: 0 16px 8px;
     grid-template-columns: minmax(0, 1fr);
-    margin-top: 30px;
+    gap: 22px;
   }
 
   .nk-hero-visual {
@@ -507,13 +516,99 @@ a {
     max-width: 100%;
   }
 
+  .nk-hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .nk-hero-title {
+    font-size: 2.1rem;
+    line-height: 1.1;
+  }
+
+  .nk-hero-subtitle {
+    margin-bottom: 18px;
+  }
+
+  .nk-hero-actions {
+    justify-content: center;
+  }
+
   .nk-quick-strip {
+    max-width: 100%;
+    margin: 8px 0 28px;
+    padding: 14px 16px 22px;
     grid-template-columns: minmax(0, 1fr);
+    border-radius: 0;
   }
 
   .nk-footer-inner {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    padding: 12px 16px 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .nk-wordmark {
+    font-size: 0.86rem;
+    letter-spacing: 0.09em;
+  }
+
+  .nk-header-actions {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+
+  .nk-link {
+    font-size: 0.88rem;
+    margin-right: 0;
+  }
+
+  .nk-btn {
+    padding: 0.55rem 1.3rem;
+    font-size: 0.9rem;
+  }
+
+  .nk-hero {
+    margin-top: 20px;
+  }
+
+  .nk-hero-title {
+    font-size: 1.7rem;
+  }
+
+  .nk-hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .nk-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .nk-hero-actions .nk-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nk-hero-footnote {
+    font-size: 0.74rem;
+  }
+
+  .nk-hero-card {
+    padding: 14px 14px 16px;
+    border-radius: 18px;
+  }
+
+  .nk-hero-grid {
+    gap: 8px;
+  }
+
+  .nk-quick-item {
+    padding: 10px 12px 12px;
   }
 }
