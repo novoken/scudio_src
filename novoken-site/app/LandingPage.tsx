@@ -22,7 +22,7 @@ const LandingPage: React.FC = () => {
 
           <nav className="nk-nav">
             <a href="/platform">Platform</a>
-            <a href="/scudio">Scudio</a>
+            <a href="https://scudio.novoken.net">Scudio</a>
             <a href="/company">Company</a>
             <a href="/careers">Careers</a>
           </nav>
